@@ -15,6 +15,11 @@ public class HomeScreen {
     public void runApp() {
         while (running) {
 
+            LedgerScreen ledgerScreen = new LedgerScreen();
+
+
+
+
             //need to put main application logic here
 
         }

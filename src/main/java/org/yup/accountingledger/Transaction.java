@@ -3,7 +3,34 @@ package org.yup.accountingledger;
 import java.util.Scanner;
 
 public class Transaction {
-    private double balance;
+
+   private String description;
+   private String vendor;
+   private double amount;
+   private double balance;
+   private boolean isDeposit;
+
+
+    public Transaction(String description, String vendor, double amount) {
+        this.description = description;
+        this.vendor = vendor;
+        this.amount = amount;
+        this.balance = balance;
+    }
+
+    public boolean isDeposit() {
+        return isDeposit;
+    }
+
+    public String toString() {
+        String type;
+        if(isDeposit) {
+            type = "Deposit";
+        }else {
+            type = "Withdrawal";
+        }
+        return type + " - " + description + " - " + amount;
+    }
 
     // lets make our methods: deposit & withdraw
     public void deposit(double amount) {
