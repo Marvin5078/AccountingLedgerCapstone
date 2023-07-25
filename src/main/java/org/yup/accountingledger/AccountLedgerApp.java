@@ -3,7 +3,11 @@ package org.yup.accountingledger;
 public class AccountLedgerApp {
 
     public static void main(String[] args) {
+        HomeScreen homeScreen = new HomeScreen();
 
-        System.out.println("'Welcome to your capstone Marvin!'");
+//        homeScreen.addDeposit();
+//        homeScreen.addWithdrawal();
+        homeScreen.homeScreenInterface();
+
     }
 }
